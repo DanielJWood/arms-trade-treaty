@@ -1,6 +1,10 @@
+ @font-face { font-family: forsythe; src: url('../fonts/Forsythe-Normal.ttf'); } 
+ @font-face { font-family: forsythe; font-weight: bold; src: url('../fonts/Forsythe-Bold.ttf'); } 
+
 body { 
-font-family: 'Gothic', sans-serif;
+font-family:  14px/120% Arial,Helvetica,sans-serif;
 background-color:rgb(32,32,32);
+
 }
 
 /*Map*/
@@ -16,13 +20,15 @@ background-color:rgb(32,32,32);
 /* Typography*/
 
 h1 {
+font-family: forsythe, sans-serif;
  font-size:60px; 
- letter-spacing:5px;
- color:rgb(255,249,0);
+ letter-spacing:3px;
+ //color:rgb(255,249,0);
  margin:0px;
  margin-top:-20px;
- text-shadow:1px 1px 13px #000;
- 
+// text-shadow:1px 1px 13px #000;
+ text-shadow:1px 1px 13px #999; 
+ font-weight: bold;
 }
 
 h2 {
@@ -84,7 +90,6 @@ a {
 
 /*Layerswitcher*/
 #country-container {
-  float:center;
   position:absolute;
   top:65px;
   height:100px;
@@ -98,7 +103,7 @@ a {
 .layerswitcher li {
  position:relative;
  height:100%;
- width:60px;
+ width:110px;
  float:left;
  padding-top:10px;
  padding-bottom:0px;
