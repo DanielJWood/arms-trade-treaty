@@ -305,3 +305,47 @@ color:rgb(255,249,0);
     height:350px;
     margin-left:25px;
   }
+
+
+  /** 
+  responsive
+  **/
+
+      @media only screen and (max-width: 1210px) {
+        ul[class="layerswitcher"] li a {
+          width: 68px;
+          padding-top: 25px;
+          padding-bottom: 25px;
+        }
+        ul[class="layerswitcher"] li {
+          width: 77px;
+        }
+        div[id="country-container"]{
+          left: 25% !important;
+        }
+      }
+
+      @media only screen and (max-width: 1050px) {
+        div[id="country-container"]{
+          left: 20% !important;
+        }
+      }
+
+      @media only screen and (max-width: 900px) {
+        div[id="country-container"]{
+          left: 15% !important;
+        }
+      }
+
+      @media only screen and (max-width: 800px) {
+        ul[class="layerswitcher"] li {
+          width: 75px;
+        }
+        div[id="country-container"]{
+          left: 12% !important;
+          right: 7% !important;
+        }
+      }
+
+      @media only screen and (max-width: 380px) {
+      }
