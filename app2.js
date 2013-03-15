@@ -2,7 +2,7 @@ var start = new Date().getTime();
 
 
 var map = mapbox.map('mymap');
-var firstlayer  = mapbox.layer().id('danwood.russia');
+var firstlayer  = mapbox.layer().id('danwood.russia1');
     map.addLayer(mapbox.layer().id('danwood.att-background'));
     map.addLayer(firstlayer)
     map.ui.zoomer.add();
@@ -12,18 +12,20 @@ var firstlayer  = mapbox.layer().id('danwood.russia');
     }, 3);
 
 
-
+var activeL;
 $(document).ready(function() {
 
 $('ul.layerswitcher a').click(function (e) {
+
+
   e.preventDefault();
+  map.removeLayer(activeL);
+  map.removeLayer(firstlayer);
   $('ul.layerswitcher a').removeClass('active');
   $(this).addClass('active');
   activeL = $(this).attr('data-layer');
-  
+  console.log(activeL);
 
-  map.removeLayer(firstlayer);
-  map.removeLayer()
   map.addLayer(mapbox.layer().id(activeL));
 });
 

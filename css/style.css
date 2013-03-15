@@ -134,14 +134,15 @@ a {
     padding-bottom:29px;
     color:rgb(98,98,22);
     color:rgba(255,255,0,0.3);
-  }
-
-.layerswitcher li a:hover {
+    background-color:rgb(33,33,33);
   -webkit-border-radius: 150px;
    border-top-left-radius: 150px;
    border-top-right-radius: 150px;
    border-bottom-right-radius: 150px;
    border-bottom-left-radius: 150px;
+  }
+
+.layerswitcher li a:hover {
    -moz-box-shadow:  0px 0px 15px 4px #888;
    -webkit-box-shadow: 0px 15px 4px #888;
    box-shadow: 0px 0px 15px 2px #888;
